@@ -1,0 +1,260 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-hosting | Hébergement Web, VPS & Serveurs de Jeu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- À ajouter dans le <head> de chaque fichier HTML, juste après les balises meta -->
+    <script>
+        // Évite le flash de contenu en appliquant immédiatement le thème
+        const theme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+    </script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="icons/logo.png" alt="4-hosting Logo"></a>
+            </div>
+            
+            <ul class="nav-links">
+                <li>
+                    <a href="web.html">
+                        <i class="fas fa-globe"></i>
+                        <span>Web</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="jeux.html">
+                        <i class="fas fa-gamepad"></i>
+                        <span>Gaming</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="vps.html">
+                        <i class="fas fa-server"></i>
+                        <span>VPS</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <i class="fas fa-headset"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="https://client.4-hosting.fr/" class="client-button">
+                    <i class="fas fa-user"></i> 
+                    <span>Espace Client</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Hébergement Haute Performance</h1>
+                <p class="hero-subtitle text-center">Solutions Web, VPS et Gaming propulsées par l'excellence française.</p>
+                <div class="cta-center">
+                    <a href="#services" class="cta-button">Découvrir nos offres</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section avant l'équipe -->
+        <section class="counter-section">
+            <div class="counter-grid">
+                <div class="counter-card">
+                    <i class="fas fa-users"></i>
+                    <div class="counter" data-target="7">0</div>
+                    <p>Clients Actifs</p>
+                </div>
+                <div class="counter-card">
+                    <i class="fas fa-server"></i>
+                    <div class="counter" data-target="4">0</div>
+                    <p>Serveurs Hébergés</p>
+                </div>
+                <div class="counter-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="counter" data-target="99">0</div>
+                    <p>% Uptime</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <h2 class="section-title">Nos Solutions d'Hébergement</h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <i class="fas fa-server service-icon"></i>
+                    <h3>Hébergement Web</h3>
+                    <p>Infrastructure haute performance avec des SSD NVMe, protection DDoS et support 24/7.</p>
+                    <a href="web.html" class="service-link">Explorer <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-network-wired service-icon"></i>
+                    <h3>Serveurs VPS</h3>
+                    <p>Serveurs virtuels dédiés avec ressources garanties et accès root complet.</p>
+                    <a href="vps.html" class="service-link">Explorer <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-gamepad service-icon"></i>
+                    <h3>Serveurs de Jeu</h3>
+                    <p>Hébergement optimisé pour les jeux avec anti-lag et configuration automatique.</p>
+                    <a href="jeux.html" class="service-link">Explorer <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Équipe -->
+        <section class="team-section">
+            <h2 class="section-title">Notre équipe</h2>
+            <div class="team-container">
+                <div class="team-card">
+                    <svg class="team-icon" viewBox="0 0 24 24" width="40" height="40">
+                        <path fill="currentColor" d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4z"/>
+                    </svg>
+                    <h3>Shani</h3>
+                    <p>CEO</p>
+                </div>
+                <div class="team-card">
+                    <svg class="team-icon" viewBox="0 0 24 24" width="40" height="40">
+                        <path fill="currentColor" d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/>
+                    </svg>
+                    <h3>Eliot</h3>
+                    <p>Chargé de communication</p>
+                </div>
+                <div class="team-card">
+                    <svg class="team-icon" viewBox="0 0 24 24" width="40" height="40">
+                        <path fill="currentColor" d="M4 4h16v12H5.17L4 17.17V4m0-2c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H4zm2 10h12v2H6v-2zm0-3h12v2H6V9zm0-3h12v2H6V6z"/>
+                    </svg>
+                    <h3>Orion</h3>
+                    <p>Admin Système</p>
+                </div>
+                <div class="team-card">
+                    <svg class="team-icon" viewBox="0 0 24 24" width="40" height="40">
+                        <path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+                    </svg>
+                    <h3>Loutre</h3>
+                    <p>Cybersécurité</p>
+                </div>
+                <div class="team-card">
+                    <svg class="team-icon" viewBox="0 0 24 24" width="40" height="40">
+                        <path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+                    </svg>
+                    <h3>Glaytax</h3>
+                    <p>Admin</p>
+                </div>
+            </div>
+        </section>
+        <!-- Fin Section Équipe -->
+
+        <!-- Remplacer la section testimonials existante par : -->
+        <section class="testimonials-section">
+            <h2 class="section-title">Ils nous font confiance</h2>
+            <div class="testimonials-container">
+                <div class="testimonials-grid">
+                    <div class="testimonial-card active">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <p class="testimonial-text">Service excellent, support réactif et installation simple. Les performances sont au rendez-vous et le rapport qualité/prix est imbattable.</p>
+                        <div class="testimonial-author">
+                            <h4>Thomas R.</h4>
+                            <p>Client VPS</p>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <p class="testimonial-text">Mon serveur Minecraft tourne parfaitement, zéro lag et une configuration automatique qui m'a fait gagner beaucoup de temps.</p>
+                        <div class="testimonial-author">
+                            <h4>Julie M.</h4>
+                            <p>Client Gaming</p>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <p class="testimonial-text">Hébergement web performant et équipe à l'écoute. La migration de mon site s'est faite sans aucun problème.</p>
+                        <div class="testimonial-author">
+                            <h4>Pierre L.</h4>
+                            <p>Client Web</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-container">
+                <h2 class="section-title">Besoin d'aide ?</h2>
+                <p class="cta-text">Notre équipe est disponible 24h/24 et 7j/7 pour vous accompagner dans vos projets</p>
+                <a href="contact.html" class="cta-button">
+                    <i class="fas fa-headset"></i>
+                    Contactez-nous
+                </a>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>4-hosting</h3>
+                    <p>Solutions d'hébergement haute performance pour vos projets web et gaming.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Plateformes</h3>
+                    <ul>
+                        <li><a href="https://client.4-hosting.fr/" target="_blank"><i class="fas fa-shopping-cart"></i> Espace client</a></li>
+                        <li><a href="https://panel.4-hosting.fr/" target="_blank"><i class="fas fa-gamepad"></i> Panel Game</a></li>
+                        <li><a href="https://myadmin.4-hosting.fr" target="_blank"><i class="fas fa-database"></i> PHPMyAdmin</a></li>
+                        <li><a href="https://web.4-hosting.fr" target="_blank"><i class="fas fa-globe"></i> Panel Web</a></li>
+                        <li><a href="https://vps.4-hosting.fr" target="_blank"><i class="fas fa-server"></i> Panel VPS</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Liens Utiles</h3>
+                    <ul>
+                        <li><a href="https://status.4-hosting.fr/" target="_blank"><i class="fas fa-signal"></i> Statut des Services</a></li>
+                        <li><a href="remboursement.html">Politique de remboursement</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Réseaux Sociaux</h3>
+                    <ul class="social-links">
+                        <li><a href="https://www.youtube.com/@4-hosting" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+                        <li><a href="https://x.com/4hosting_off" target="_blank"><i class="fab fa-twitter"></i> X/Twitter</a></li>
+                        <li><a href="https://www.facebook.com/people/4-Hosting-Officiel/61578185159375/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 4-hosting. Tous droits réservés.</p>
+            </div>
+        </footer>
+    </main>
+    
+    <script src="js/index.js"></script>
+</body>
+</html>

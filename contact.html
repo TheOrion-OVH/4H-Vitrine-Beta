@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - 4-hosting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        // Évite le flash de contenu en appliquant immédiatement le thème
+        const theme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+    </script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="icons/logo.png" alt="4-hosting Logo"></a>
+            </div>
+            
+            <ul class="nav-links">
+                <li>
+                    <a href="web.html">
+                        <i class="fas fa-globe"></i>
+                        <span>Web</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="jeux.html">
+                        <i class="fas fa-gamepad"></i>
+                        <span>Gaming</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="vps.html">
+                        <i class="fas fa-server"></i>
+                        <span>VPS</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <i class="fas fa-headset"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="https://client.4-hosting.fr/" class="client-button">
+                    <i class="fas fa-user"></i> 
+                    <span>Espace Client</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="contact-hero">
+            <h1 class="section-title">Contactez-nous</h1>
+            <p class="contact-subtitle">Notre équipe est disponible 24h/24 et 7j/7 pour vous accompagner</p>
+        </section>
+
+        <section class="contact-methods">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <h3>Discord</h3>
+                    <p>Support instantané 24/7</p>
+                    <a href="https://discord.gg/q7a6q62y3C" class="contact-button" target="_blank">
+                        Rejoindre le serveur
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>Support par email</p>
+                    <a href="mailto:contact@4-hosting.fr" class="contact-button">
+                        contact@4-hosting.fr
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Téléphone</h3>
+                    <p>Support téléphonique</p>
+                    <a href="tel:+33775738564" class="contact-button">
+                        07 75 73 85 64
+                    </a>
+                </div>
+            </div>
+        </section>
+                <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>4-hosting</h3>
+                    <p>Solutions d'hébergement haute performance pour vos projets web et gaming.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Plateformes</h3>
+                    <ul>
+                        <li><a href="https://client.4-hosting.fr/" target="_blank"><i class="fas fa-shopping-cart"></i> Espace client</a></li>
+                        <li><a href="https://panel.4-hosting.fr/" target="_blank"><i class="fas fa-gamepad"></i> Panel Game</a></li>
+                        <li><a href="https://myadmin.4-hosting.fr" target="_blank"><i class="fas fa-database"></i> PHPMyAdmin</a></li>
+                        <li><a href="https://web.4-hosting.fr" target="_blank"><i class="fas fa-globe"></i> Panel Web</a></li>
+                        <li><a href="https://vps.4-hosting.fr" target="_blank"><i class="fas fa-server"></i> Panel VPS</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Liens Utiles</h3>
+                    <ul>
+                        <li><a href="https://status.4-hosting.fr/" target="_blank"><i class="fas fa-signal"></i> Statut des Services</a></li>
+                        <li><a href="remboursement.html">Politique de remboursement</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Réseaux Sociaux</h3>
+                    <ul class="social-links">
+                        <li><a href="https://www.youtube.com/@4-hosting" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+                        <li><a href="https://x.com/4hosting_off" target="_blank"><i class="fab fa-twitter"></i> X/Twitter</a></li>
+                        <li><a href="https://www.facebook.com/people/4-Hosting-Officiel/61578185159375/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 4-hosting. Tous droits réservés.</p>
+            </div>
+        </footer>
+    </main>
+    <script src="js/components.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

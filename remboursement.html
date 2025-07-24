@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Remboursement - 4-hosting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        // Évite le flash de contenu en appliquant immédiatement le thème
+        const theme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+    </script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="icons/logo.png" alt="4-hosting Logo"></a>
+            </div>
+            
+            <ul class="nav-links">
+                <li>
+                    <a href="web.html">
+                        <i class="fas fa-globe"></i>
+                        <span>Web</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="jeux.html">
+                        <i class="fas fa-gamepad"></i>
+                        <span>Gaming</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="vps.html">
+                        <i class="fas fa-server"></i>
+                        <span>VPS</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <i class="fas fa-headset"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="https://client.4-hosting.fr/" class="client-button">
+                    <i class="fas fa-user"></i> 
+                    <span>Espace Client</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="policy-container">
+        <h1 class="section-title">Politique de Remboursement</h1>
+        
+        <section class="policy-section">
+            <h2>Conditions Standard de Remboursement</h2>
+            <p>Les produits achetés chez 4-hosting ne peuvent être remboursés que s'ils sont annulés dans les 30 jours suivant la date de la transaction.</p>
+            
+            <div class="notice-box warning">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p><strong>Remarque sur les crypto-monnaies :</strong> En raison de leur nature, les crypto-monnaies, les jetons et les actifs numériques sont généralement irréversibles et leurs taux de change sont très volatils et transitoires. Nous ne pouvons être responsables de tout risque, y compris, mais sans s'y limiter, le risque de taux de change et le risque de marché.</p>
+            </div>
+        </section>
+
+        <section class="policy-section">
+            <h2>Produits Remboursables</h2>
+            <ul class="policy-list">
+                <li><i class="fas fa-check"></i> Hébergement (tous les plans, sauf le premier paiement après l'essai gratuit)</li>
+                <li><i class="fas fa-check"></i> Extension des sauvegardes quotidiennes</li>
+                <li><i class="fas fa-check"></i> Offre mail</li>
+                <li><i class="fas fa-check"></i> Assistance rapide</li>
+                <li><i class="fas fa-check"></i> Serveur de jeux</li>
+                <li><i class="fas fa-check"></i> KVM VPS</li>
+            </ul>
+        </section>
+
+        <section class="policy-section">
+            <h2>Produits Non Remboursables</h2>
+            <ul class="policy-list">
+                <li><i class="fas fa-times"></i> Licence VPS à vie</li>
+            </ul>
+        </section>
+
+        <section class="policy-section">
+            <h2>Remboursements lors d'Offres Spéciales</h2>
+            <p>De temps à autre, 4-hosting propose des offres spéciales telles qu'un serveur de jeux gratuit à l'achat d'un plan serveurs de jeux de 12/24/48 mois.</p>
+            <p>Ces offres spéciales ne sont ni remboursables, ni échangeables contre d'autres produits.</p>
+        </section>
+
+        <section class="policy-section">
+            <h2>Modes de Paiement avec Conditions Spéciales</h2>
+            <div class="notice-box info">
+                <i class="fas fa-info-circle"></i>
+                <p>LitePay (cryptomonnaies) : Seul un remboursement sur le solde 4-hosting est possible.</p>
+            </div>
+        </section>
+
+        <section class="policy-section">
+            <h2>Rétrofacturation</h2>
+            <div class="notice-box danger">
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Toute rétrofacturation entraînera la suspension immédiate du compte et des services associés.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>4-hosting</h3>
+                <p>Solutions d'hébergement haute performance pour vos projets web et gaming.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Plateformes</h3>
+                <ul>
+                    <li><a href="https://client.4-hosting.fr/" target="_blank"><i class="fas fa-shopping-cart"></i> Espace client</a></li>
+                    <li><a href="https://panel.4-hosting.fr/" target="_blank"><i class="fas fa-gamepad"></i> Panel Game</a></li>
+                    <li><a href="https://myadmin.4-hosting.fr" target="_blank"><i class="fas fa-database"></i> PHPMyAdmin</a></li>
+                    <li><a href="https://web.4-hosting.fr" target="_blank"><i class="fas fa-globe"></i> Panel Web</a></li>
+                    <li><a href="https://vps.4-hosting.fr" target="_blank"><i class="fas fa-server"></i> Panel VPS</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Liens Utiles</h3>
+                <ul>
+                    <li><a href="https://status.4-hosting.fr/" target="_blank"><i class="fas fa-signal"></i> Statut des Services</a></li>
+                    <li><a href="remboursement.html">Politique de remboursement</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Réseaux Sociaux</h3>
+                <ul class="social-links">
+                    <li><a href="https://www.youtube.com/@4-hosting" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+                    <li><a href="https://x.com/4hosting_off" target="_blank"><i class="fab fa-twitter"></i> X/Twitter</a></li>
+                    <li><a href="https://www.facebook.com/people/4-Hosting-Officiel/61578185159375/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 4-hosting. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>

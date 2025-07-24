@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarifs Hébergement Web - 4-hosting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- À ajouter dans le <head> de chaque fichier HTML, juste après les balises meta -->
+    <script>
+        // Évite le flash de contenu en appliquant immédiatement le thème
+        const theme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+    </script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="icons/logo.png" alt="4-hosting Logo"></a>
+            </div>
+            
+            <ul class="nav-links">
+                <li>
+                    <a href="web.html">
+                        <i class="fas fa-globe"></i>
+                        <span>Web</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="jeux.html">
+                        <i class="fas fa-gamepad"></i>
+                        <span>Gaming</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="vps.html">
+                        <i class="fas fa-server"></i>
+                        <span>VPS</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <i class="fas fa-headset"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="https://client.4-hosting.fr/" class="client-button">
+                    <i class="fas fa-user"></i> 
+                    <span>Espace Client</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tarifs" class="pricing-section">
+            <h2 class="section-title">Hébergement Web</h2>
+
+            <div class="pricing-content active">
+                <div id="web" class="tab-content active">
+                    <!-- Pricing Grid -->
+                    <div class="pricing-grid">
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <div class="price">
+                                    0€<span class="period">/mois</span>
+                                </div>
+                            </div>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> 1 Domaine Personnalisé</li>
+                                <li><i class="fas fa-check"></i> 1 Go SSD</li>
+                                <li><i class="fas fa-check"></i> Bande Passante Illimitée</li>
+                                <li><i class="fas fa-check"></i> 1 Base de données</li>
+                                <li><i class="fas fa-check"></i> 2 Comptes Mail/FTP</li>
+                                <li><i class="fas fa-check"></i> Certificat SSL Gratuit</li>
+                            </ul>
+                            <button class="pricing-button" onclick="window.open('https://client.4-hosting.fr', '_blank')">
+                                Commander
+                            </button>
+                        </div>
+
+                        <div class="pricing-card popular">
+                            <div class="pricing-header">
+                                <div class="price">
+                                    1€<span class="period">/mois</span>
+                                </div>
+                            </div>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> Domaines Personnalisés illimités</li>
+                                <li><i class="fas fa-check"></i> 10 Go SSD</li>
+                                <li><i class="fas fa-check"></i> Bande Passante Illimitée</li>
+                                <li><i class="fas fa-check"></i> 3 Base de données</li>
+                                <li><i class="fas fa-check"></i> 5 Comptes Mail/FTP</li>
+                                <li><i class="fas fa-check"></i> Certificat SSL Gratuit</li>
+                            </ul>
+                            <button class="pricing-button" onclick="window.open('https://client.4-hosting.fr', '_blank')">
+                                Commander
+                            </button>
+                        </div>
+
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <div class="price">
+                                    3€<span class="period">/mois</span>
+                                </div>
+                            </div>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> Domaines Personnalisés illimités</li>
+                                <li><i class="fas fa-check"></i> 20 Go SSD</li>
+                                <li><i class="fas fa-check"></i> Bande Passante Illimitée</li>
+                                <li><i class="fas fa-check"></i> 5 Base de données</li>
+                                <li><i class="fas fa-check"></i> 10 Comptes Mail/FTP</li>
+                                <li><i class="fas fa-check"></i> Certificat SSL Gratuit</li>
+                            </ul>
+                            <button class="pricing-button" onclick="window.open('https://client.4-hosting.fr', '_blank')">
+                                Commander
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Features section after pricing -->
+                    <div class="web-features">
+                        <h3 class="subsection-title">Fonctionnalités incluses</h3>
+                        <div class="feature-grid">
+                            <div class="feature-card">
+                                <i class="fab fa-git-alt"></i>
+                                <p>Gestionnaire Git</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-shield-alt"></i>
+                                <p>Gestionnaire SSL</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-globe"></i>
+                                <p>Gestionnaire de Sites</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-sitemap"></i>
+                                <p>Sous-domaines</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-envelope"></i>
+                                <p>Email</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-exchange-alt"></i>
+                                <p>FTP</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-network-wired"></i>
+                                <p>DNS</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-folder-open"></i>
+                                <p>Gestionnaire de Fichiers</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-terminal"></i>
+                                <p>Gestionnaire SSH</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-shield-virus"></i>
+                                <p>Imunify</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fab fa-wordpress"></i>
+                                <p>Wordpress</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>4-hosting</h3>
+                <p>Solutions d'hébergement haute performance pour vos projets web et gaming.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Plateformes</h3>
+                <ul>
+                    <li><a href="https://client.4-hosting.fr/" target="_blank"><i class="fas fa-shopping-cart"></i> Espace client</a></li>
+                    <li><a href="https://panel.4-hosting.fr/" target="_blank"><i class="fas fa-gamepad"></i> Panel Game</a></li>
+                    <li><a href="https://myadmin.4-hosting.fr" target="_blank"><i class="fas fa-database"></i> PHPMyAdmin</a></li>
+                    <li><a href="https://web.4-hosting.fr" target="_blank"><i class="fas fa-globe"></i> Panel Web</a></li>
+                    <li><a href="https://vps.4-hosting.fr" target="_blank"><i class="fas fa-server"></i> Panel VPS</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Liens Utiles</h3>
+                <ul>
+                    <li><a href="https://status.4-hosting.fr/" target="_blank"><i class="fas fa-signal"></i> Statut des Services</a></li>
+                    <li><a href="remboursement.html">Politique de remboursement</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Réseaux Sociaux</h3>
+                <ul class="social-links">
+                    <li><a href="https://www.youtube.com/@4-hosting" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+                    <li><a href="https://x.com/4hosting_off" target="_blank"><i class="fab fa-twitter"></i> X/Twitter</a></li>
+                    <li><a href="https://www.facebook.com/people/4-Hosting-Officiel/61578185159375/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 4-hosting. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
